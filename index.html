@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Programación I | Parcial 1 | APELLIDO, NOMBRE | APELLIDO, NOMBRE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" href="imagenes/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul id="hamburguesa">
+                <li><a href="#menu" onclick="AbrirMenu()">Abrir</a></li>
+                <li><a href="#">Cerrar</a></li>
+            </ul>
+            <ul id="barra">
+                <h2>Mis discos</h2>
+                <li><a><button onclick="Cargar();">Cargar nuevo disco</button></a></li>
+                <li><a><button onclick="Mostrar();">Mostrar discos</button></a></li>
+                <li><a><button onclick="BuscarDisco();">Buscar disco por código.</button></a></li>
+                <li><a><button onclick="MostrarDatosDeDiscos();">Mostrar datos de cada disco(cant. pistas, duracion de cada disco, etc).</button></a></li>
+                <li><a><button onclick="MostrarDatosDeDiscoEspecifico();">Mostrar los datos del disco deseado.</button></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bienvenido a nuestro parcial</h1>
+        <!-- <button onclick="Cargar();">Cargar nuevo disco</button>
+            <button onclick="Mostrar();">Mostrar discos</button>
+            <button onclick="BuscarDisco();">Buscar disco por código.</button> -->
+
+        <div id="discos">
+
+        </div>
+
+        <div id="discoBuscado">
+     
+        </div>
+
+        <div id="discoBuscadoInfo">
+            <ul id="ulBuscadoInfo">
+
+            </ul>   
+        </div>
+
+        <div id="datosDeColoresDiscos">
+
+        </div>
+
+        <button id="limpiar">Limpiar</button>
+
+        <script src="js/index.js"></script>
+
+    </main>
+    <footer>
+        <ul>
+            <li>Profesor Fabrizio Carlassara</li>
+            <li>
+                <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre"
+                    target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+            </li>
+            <li>Programación 1</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
